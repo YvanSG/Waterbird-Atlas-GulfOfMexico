@@ -11,7 +11,7 @@
 
 
 
-<title>Methodology_Markdown</title>
+<title>index</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1068,7 +1068,7 @@ choosing between two sets with the same name but on distinct islets, we
 renamed each islet with a categorizer (e.g., “North…” or “South…”); or
 if sites with questionable sets of locations corresponded to DWH
 Regionwide TIG datasets, we used the TIG dataset as a reference to make
-the distinction between sites. See R script <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_2_Match_colony_name_across_years.R">2_2_Match_colony_name_across_years.R</a>
+the distinction between sites. See R script <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_2_Match_colony_name_across_years.R">2_2_Match_colony_name_across_years.R</a>
 for details.</p></li>
 <li><p><strong>Species categories (including Reddish Egret
 morphs)</strong>: As described above (see <a href="#species">Species</a>), we included most but not all waterbird
@@ -1076,7 +1076,7 @@ species reportedly breeding in the northern Gulf of Mexico (see <a href="#sp_lis
 Reddish Egrets were reported with details on their morphotype (dark or
 white morph). This level of detail was not consistent across the Atlas
 footprint; therefore we decided to not differentiate between morphotypes
-and included Reddish Egret at the species level only. See R script <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_3_Clean_ReddishEgret_morphs.R">2_3_Clean_ReddishEgret_morphs.R</a>
+and included Reddish Egret at the species level only. See R script <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_3_Clean_ReddishEgret_morphs.R">2_3_Clean_ReddishEgret_morphs.R</a>
 for details.</p></li>
 <li><p><strong>Double counts within datasets</strong>: In some cases
 (mostly in the Florida Wading Bird Colony Database), sites had more than
@@ -1089,7 +1089,7 @@ cases, duplicate records had actual count data but, when different count
 units were reported, each unit was reported as an individual record. In
 these cases, we combined information into a single record. Finally, when
 duplicates were a result of multiple surveys occurring during the same
-year, we kept the maximum count for that year. See R script<a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_4_Fix_Double_counts.R">2_4_Fix_Double_counts.R</a>
+year, we kept the maximum count for that year. See R script<a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_4_Fix_Double_counts.R">2_4_Fix_Double_counts.R</a>
 for details.</p></li>
 <li><p><strong>Double counts between datasets</strong>: Surveys from the
 DWH Regionwide TIG (hereafter, TIG) sometimes overlapped temporally
@@ -1125,7 +1125,7 @@ assigned “separate” and sites with different names were assigned
 “together”. Finally, for all sites that were assigned “separate”, we
 checked temporal overlap: if no overlap existed (same location, same
 name but surveyed on different years), sites were reassigned “together”;
-otherwise, they remained assigned as “separate”. See R script <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_5_Manage_TIG_overlap.R">2_5_Manage_TIG_overlap.R</a>
+otherwise, they remained assigned as “separate”. See R script <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_5_Manage_TIG_overlap.R">2_5_Manage_TIG_overlap.R</a>
 for details of the computing.</p></li>
 <li><p><strong>Presence-only records</strong>: In some instances,
 records were reported without counts but with a mention of breeding
@@ -1239,7 +1239,7 @@ using online coding (<a href="https://doc.arcgis.com/en/dashboards/latest/get-st
 expressions</a>), we chose instead to do this in R because R is widely
 used, free software with open source scripts that allows ease of
 reproducibility (version control). R scripts created for the Atlas are
-available at this link: <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_6_Create_ArcGIS_datasets.R">2_6_Create_ArcGIS_datasets.R</a>.</p>
+available at this link: <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_6_Create_ArcGIS_datasets.R">2_6_Create_ArcGIS_datasets.R</a>.</p>
 <p>We created three distinct versions of the main <a href="#registry">Registry</a> dataset (Table 5). To preserve formatting,
 each dataset is imported in AGOL in GeoJSON format.</p>
 <p><br></p>
@@ -1761,7 +1761,7 @@ and extracted the description using “Expand HTML description field”
 tool, both in the “<a href="https://github.com/NationalSecurityAgency/qgis-kmltools-plugin">KML
 Tools</a>” plugin. We then exported the resulting layer as an SHP layer.
 In R, we merged all layers into a single file, with survey year as
-attribute. The R scrip may be found at this link: <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/tree/main/1_Prepare_original_datasets">1_Gulfwide_TIG_Flightpaths.R</a>.</p></li>
+attribute. The R scrip may be found at this link: <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/1_Prepare_original_datasets/1_Gulfwide_TIG_Flightpaths.R">1_Gulfwide_TIG_Flightpaths.R</a>.</p></li>
 </ul>
 <p><br></p>
 </div>
@@ -2440,11 +2440,11 @@ Atlas.</strong></h6>
 <div id="scripts" class="section level4">
 <h4>b. R scripts</h4>
 <p>Annotated R scripts are available in the dedicated Github repository
-<a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/tree/main">GulfOfMexico_waterbird_atlas</a>.</p>
+<a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/tree/main">GulfOfMexico_waterbird_atlas</a>.</p>
 <p><br></p>
 <div id="scripts_1" class="section level5">
 <h5>i. 1_Prepare_original_datasets</h5>
-<p>This library can be found at <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/tree/main/1_Prepare_original_datasets" class="uri">https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/tree/main/1_Prepare_original_datasets</a>.
+<p>This library can be found at <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/tree/main/1_Prepare_original_datasets" class="uri">https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/tree/main/1_Prepare_original_datasets</a>.
 We created it to clean the original datasets. These scripts, which are
 specific to data providers and may be used on their own, were used for
 streamlining the data, to allow for a smooth inclusion into the coherent
@@ -2453,23 +2453,23 @@ dataset structure.</p>
 </div>
 <div id="scripts_2" class="section level5">
 <h5>ii. 2_Combine_all_data</h5>
-<p>This library can be found at <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data" class="uri">https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data</a>.
+<p>This library can be found at <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/tree/main/2_Combine_all_data" class="uri">https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/tree/main/2_Combine_all_data</a>.
 We created it to combine cleaned datasets into a coherent structure. In
-addition to merging all the datasets, the main script (<a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/1_Combine_all_data.R">2_1_Combine_all_data.R</a>)
+addition to merging all the datasets, the main script (<a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_1_Combine_all_data.R">2_1_Combine_all_data.R</a>)
 is also used for major edits across datasets. Most of these edits are
 part of the main script but we chose to keep some edits in their
 separate scripts because they required special attention:</p>
 <ul>
-<li><p><a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_2_Match_colony_name_across_years.R">2_2_Match_colony_name_across_years.R</a>:
+<li><p><a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_2_Match_colony_name_across_years.R">2_2_Match_colony_name_across_years.R</a>:
 Modifies colony names so they match across years.</p></li>
-<li><p><a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/3_Clean_ReddishEgret_morphs.R">2_3_Clean_ReddishEgret_morphs.R</a>:
+<li><p><a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_3_Clean_ReddishEgret_morphs.R">2_3_Clean_ReddishEgret_morphs.R</a>:
 Summarizes and cleans up data on Reddish Egret morphs.</p></li>
-<li><p><a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_4_Fix_Double_counts.R">2_4_Fix_Double_counts.R</a>:
+<li><p><a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_4_Fix_Double_counts.R">2_4_Fix_Double_counts.R</a>:
 Fixes double-counting within datasets.</p></li>
-<li><p><a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_5_Manage_TIG_overlap.R">2_5_Manage_TIG_overlap.R</a>:
+<li><p><a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_5_Manage_TIG_overlap.R">2_5_Manage_TIG_overlap.R</a>:
 Provides a framework for highlighting sites and years of overlap between
 terrestrial surveys and DWH Regionwide TIG surveys.</p></li>
-<li><p><a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/blob/main/2_Combine_all_data/2_6_Create_ArcGIS_datasets.R">2_6_Create_ArcGIS_datasets.R</a>:
+<li><p><a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/blob/main/2_Combine_all_data/2_6_Create_ArcGIS_datasets.R">2_6_Create_ArcGIS_datasets.R</a>:
 Exports spatial datasets to the ArcGIS Online platform.</p></li>
 </ul>
 <p><br></p>
@@ -2477,11 +2477,10 @@ Exports spatial datasets to the ArcGIS Online platform.</p></li>
 <div id="scripts_3" class="section level5">
 <h5>iii. 3_Prepare_data_summaries</h5>
 <p>We used this library to create ad-hoc data summaries during the
-building of the Atlas. This library can be found at <a href="https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/tree/main/3_Prepare_data_summaries" class="uri">https://github.com/YvanSG/GulfOfMexico_waterbird_atlas/tree/main/3_Prepare_data_summaries</a>.</p>
+building of the Atlas. This library can be found at <a href="https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/tree/main/3_Prepare_data_summaries" class="uri">https://github.com/YvanSG/Waterbird-Atlas-GulfOfMexico/tree/main/3_Prepare_data_summaries</a>.</p>
 <p><br></p>
 <hr />
 <p>END OF METHODS (July 2024)</p>
-<p><br></p>
 <p>Suggested citation: <br> Jodice, Patrick G.R., Kathy M. Hixson, Yvan
 G. Satgé, and Jeffrey S. Gleason. 2024. Atlas of Waterbird Breeding
 Sites in the Northern Gulf of Mexico</p>
