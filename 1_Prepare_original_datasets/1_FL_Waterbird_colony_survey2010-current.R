@@ -150,6 +150,11 @@ d <- setdiff(d, blank)
 library(sf)
 blank <- st_as_sf(blank, coords = c("Longitude", "Latitude"), remove = FALSE, crs = 4326)
 
+# manually create ./data_GIS and .data_GIS/FL_counties folders at root location
+# download county shapefile from data.gov
+# https://www2.census.gov/geo/tiger/TIGER2022/COUNTY/tl_2022_us_county.zip
+# unzip file in .data_GIS/FL_counties folder
+
 # bring in county names spatial layer
 county <- read_sf("./data_GIS/FL_counties/tl_2022_us_county/tl_2022_us_county.shp")
 
