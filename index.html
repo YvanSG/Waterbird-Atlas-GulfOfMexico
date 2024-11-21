@@ -4,6 +4,8 @@
 
 <head>
 
+<base target="_blank">
+
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
@@ -453,7 +455,8 @@ was not, however, reported consistently across the Atlas footprint and
 this led to instances where, when summed, totals of morphs did not
 always match species-level totals. Therefore, we did not differentiate
 between morphotypes and included Reddish Egret at the species level
-only. {#REEG_morphs}</p>
+only.See <a href="#combining">Combining and unifying the data</a> for
+details.</p>
 <p>There also were three groups of species for which distinguishing to
 the species level was difficult depending on survey conditions. For
 these, we classified observations as species groups instead of
@@ -463,7 +466,7 @@ individual species. The pairings included: (1) Brown Noddy/Sooty Tern,
 at some of the sites within the Atlas footprint, we chose not to include
 them here due to differences in bird survey objectives among
 stakeholders and/or inconsistencies in data collection for these species
-among the various stakeholder groups.. These species included: American
+among the various stakeholder groups. These species included: American
 Oystercatcher, Black-necked Stilt, Limpkin, Snowy Plover, Willet, and
 Wilson’s Plover. Similarly, we did not include data for American Coot or
 Common Gallinule.</p>
@@ -501,22 +504,22 @@ may be found in the Registry, under attributes <a href="#meth_nest">Method_Nests
 <p><br></p>
 <div id="table_years" class="section level6">
 <h6><strong>Table 1. Temporal availability of Atlas data.</strong></h6>
-<table>
+<table style="width:100%;">
 <colgroup>
-<col width="34%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
-<col width="4%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -778,17 +781,17 @@ enquire if methodologies allow for such comparisons.</p>
 <h6><strong>Table 2. Distribution of observations reported in the
 Atlas.</strong> An observation corresponds to a count for a combination
 of species/site/year/data provider.</h6>
-<table>
+<table style="width:100%;">
 <colgroup>
-<col width="32%" />
 <col width="11%" />
-<col width="6%" />
-<col width="6%" />
-<col width="6%" />
-<col width="6%" />
-<col width="9%" />
-<col width="6%" />
-<col width="14%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1140,10 +1143,10 @@ for details.</p></li>
 <li><p><strong>Double counts within datasets</strong>: In some cases
 (mostly in the Florida Wading Bird Colony Database), sites had more than
 one record per species per site per year, with different count values.
-This was frequently due to duplicate records with “presence”/”absence”
+This was frequently due to duplicate records with “presence”/“absence”
 information in methodology, and 1/0 values in metrics: in this case, we
-corrected “presence”/”absence” with -1/0 values in metrics (as described
-later), and deleted the records with “presence”/”absence”. In other
+corrected “presence”/“absence” with -1/0 values in metrics (as described
+later), and deleted the records with “presence”/“absence”. In other
 cases, duplicate records had actual count data but, when different count
 units were reported, each unit was reported as an individual record. In
 these cases, we combined information into a single record. Finally, when
@@ -1202,7 +1205,7 @@ would have been included in those summations.</p></li>
 were not provided as single numerical values but instead were provided
 as numeric ranges (e.g. “5-10” nests). Because counts must be in
 numerical format to allow for spatial summing, we replaced ranges by
-their midpoint value for the Atlas ”Nest”, “Pairs”, and “Adults”
+their midpoint value for the Atlas “Nest”, “Pairs”, and “Adults”
 metrics. We archived the original count data in new dataset columns
 “OriginalNests”, “OriginalPairs”, “OriginalAdults” to ensure they still
 are available to end-users if needed.</p></li>
@@ -1232,6 +1235,10 @@ methods (<a href="#table_methods">Table 4</a>).</p></li>
 Atlas.</strong> See <a href="#attributes">Registry attributes</a> for
 more details.</h6>
 <table>
+<colgroup>
+<col width="34%" />
+<col width="65%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Method *</th>
@@ -1308,11 +1315,11 @@ each dataset is imported in AGOL in GeoJSON format.</p>
 <div id="table-5.-spatial-datasets-created-for-the-arcgis-online-platform." class="section level6">
 <h6><strong>Table 5. Spatial datasets created for the ArcGIS Online
 platform.</strong></h6>
-<table>
+<table style="width:100%;">
 <colgroup>
 <col width="24%" />
 <col width="24%" />
-<col width="25%" />
+<col width="26%" />
 <col width="24%" />
 </colgroup>
 <thead>
@@ -1835,7 +1842,7 @@ attribute. The R scrip may be found at this link: <a href="https://github.com/Yv
 <p>Atlas users can affect what data are displayed in the <a href="#map">Map</a>, <a href="#tables">Tables</a>, <a href="#list">Site
 List</a>, <a href="#card">Site Summary card</a>, <a href="#indices">Indices</a>, and <a href="#indices">Registry</a>. A
 tutorial on how to use the Atlas is available by clicking on the blue
-pin button in the Atlas’ left-hand bar (<a href="https://experience.arcgis.com/experience/ec2a9f88f0154772aed8f249796dde0b/?dlg=Tour&amp;views=%20Welcome"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgRnJlZSA2LjYuMCBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIChJY29uczogQ0MgQlkgNC4wLCBGb250czogU0lMIE9GTCAxLjEsIENvZGU6IE1JVCBMaWNlbnNlKSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4gLS0+PHBhdGggZD0iTTIxNS43IDQ5OS4yQzI2NyA0MzUgMzg0IDI3OS40IDM4NCAxOTJDMzg0IDg2IDI5OCAwIDE5MiAwUzAgODYgMCAxOTJjMCA4Ny40IDExNyAyNDMgMTY4LjMgMzA3LjJjMTIuMyAxNS4zIDM1LjEgMTUuMyA0Ny40IDB6TTE5MiAxMjhhNjQgNjQgMCAxIDEgMCAxMjggNjQgNjQgMCAxIDEgMC0xMjh6Ii8+PC9zdmc+" width="20" weight="20" /></a>).
+pin button in the Atlas’ left-hand bar (<a href="https://experience.arcgis.com/experience/ec2a9f88f0154772aed8f249796dde0b/?dlg=Tour&amp;views=%20Welcome"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgRnJlZSA2LjcuMSBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIChJY29uczogQ0MgQlkgNC4wLCBGb250czogU0lMIE9GTCAxLjEsIENvZGU6IE1JVCBMaWNlbnNlKSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4gLS0+PHBhdGggZD0iTTIxNS43IDQ5OS4yQzI2NyA0MzUgMzg0IDI3OS40IDM4NCAxOTJDMzg0IDg2IDI5OCAwIDE5MiAwUzAgODYgMCAxOTJjMCA4Ny40IDExNyAyNDMgMTY4LjMgMzA3LjJjMTIuMyAxNS4zIDM1LjEgMTUuMyA0Ny40IDB6TTE5MiAxMjhhNjQgNjQgMCAxIDEgMCAxMjggNjQgNjQgMCAxIDEgMC0xMjh6Ii8+PC9zdmc+" width="20" weight="20" /></a>).
 Here, we provide details on the underlying architecture of the user
 interface.</p>
 <p>The AGOL architecture builds upon geospatial files (<a href="https://doc.arcgis.com/en/arcgis-online/reference/feature-layers.htm">hosted
@@ -1867,7 +1874,7 @@ described below (<a href="#using">3. Using the Atlas</a>).</p>
 <p>Atlas users can affect what data are displayed in the <a href="#map">Map</a>, <a href="#tables">Tables</a>, <a href="#list">Site
 List</a>, <a href="#card">Site Summary card</a>, <a href="#indices">Indices</a>, and <a href="#indices">Registry</a>. A
 tutorial on how to use the Atlas is available by clicking on the blue
-pin button in the Atlas’ left-hand bar (<a href="https://experience.arcgis.com/experience/ec2a9f88f0154772aed8f249796dde0b/?dlg=Tour&amp;views=%20Welcome"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgRnJlZSA2LjYuMCBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIChJY29uczogQ0MgQlkgNC4wLCBGb250czogU0lMIE9GTCAxLjEsIENvZGU6IE1JVCBMaWNlbnNlKSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4gLS0+PHBhdGggZD0iTTIxNS43IDQ5OS4yQzI2NyA0MzUgMzg0IDI3OS40IDM4NCAxOTJDMzg0IDg2IDI5OCAwIDE5MiAwUzAgODYgMCAxOTJjMCA4Ny40IDExNyAyNDMgMTY4LjMgMzA3LjJjMTIuMyAxNS4zIDM1LjEgMTUuMyA0Ny40IDB6TTE5MiAxMjhhNjQgNjQgMCAxIDEgMCAxMjggNjQgNjQgMCAxIDEgMC0xMjh6Ii8+PC9zdmc+" width="20" weight="20" /></a>).
+pin button in the Atlas’ left-hand bar (<a href="https://experience.arcgis.com/experience/ec2a9f88f0154772aed8f249796dde0b/?dlg=Tour&amp;views=%20Welcome"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgRnJlZSA2LjcuMSBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIChJY29uczogQ0MgQlkgNC4wLCBGb250czogU0lMIE9GTCAxLjEsIENvZGU6IE1JVCBMaWNlbnNlKSBDb3B5cmlnaHQgMjAyNCBGb250aWNvbnMsIEluYy4gLS0+PHBhdGggZD0iTTIxNS43IDQ5OS4yQzI2NyA0MzUgMzg0IDI3OS40IDM4NCAxOTJDMzg0IDg2IDI5OCAwIDE5MiAwUzAgODYgMCAxOTJjMCA4Ny40IDExNyAyNDMgMTY4LjMgMzA3LjJjMTIuMyAxNS4zIDM1LjEgMTUuMyA0Ny40IDB6TTE5MiAxMjhhNjQgNjQgMCAxIDEgMCAxMjggNjQgNjQgMCAxIDEgMC0xMjh6Ii8+PC9zdmc+" width="20" weight="20" /></a>).
 Here we provide details on the decisions that we made when designing the
 Atlas user interface.</p>
 <p><br></p>
@@ -1925,14 +1932,14 @@ selected individually (by a simple click) or as a group (using rectangle
 or lasso selection tools). Once a selection is made: the
 <em>Map/Selection</em> Tables update with total counts for that
 selection (see <a href="#tables">Tables</a> below for more information);
-the <span id="list">Site List</span> updates with the names of sites in
-the selection; and the <a href="#indices">Site and Species Indices</a>
-update with the number of individual sites and individual species
-surveyed in the selection. - <strong>Tools</strong>: Tools may be used
-to enhance the map experience: - Search bar: can be used to search
-physical locations and addresses. Sites can be searched in the <a href="#list">Site List</a>; - Bookmarks: switches the maps’ extent; -
-Legend: lists visible layers; - Basemaps: provides a list of available
-basemaps.</p>
+the Site List updates with the names of sites in the selection; and the
+<a href="#indices">Site and Species Indices</a> update with the number
+of individual sites and individual species surveyed in the selection. -
+<strong>Tools</strong>: Tools may be used to enhance the map experience:
+- Search bar: can be used to search physical locations and addresses.
+Sites can be searched in the <a href="#list">Site List</a>; - Bookmarks:
+switches the maps’ extent; - Legend: lists visible layers; - Basemaps:
+provides a list of available basemaps.</p>
 <p><br></p>
 </div>
 <div id="registry" class="section level4">
@@ -1958,19 +1965,19 @@ correspond to a species count, presence-only (-1), absence (0), or no
 data (empty cell): see <a href="#table_values">Table 9</a> for
 details.</p>
 <ul>
-<li><p><strong><em>Map/Selection</em> tables</strong>: These tables
-display the sums of counts across all sites in the Map (when no site is
-selected) or across all selected sites. These sums are rounded (see
-<strong>Note 1</strong> below). By default, the <em>Map/Selection</em>
-tables display summed counts for the whole study area. By using Category
-Selectors, or selecting sites in the Map or Registry, these tables can
-be updated to display summed counts for those particular selections.
-Selecting a species in a <em>Map/Selection</em> table will display on
-the Map the sites that contributed to the summed counts in that
-table.</p></li>
-<li><p><strong><em>Site</em> tables</strong>: These tables provide
-counts at a single site, but only when a site is selected in the
-<strong>Site List</strong>. These count numbers have
+<li><p><strong><em>Map/Selection</em></strong> <strong>tables</strong>:
+These tables display the sums of counts across all sites in the Map
+(when no site is selected) or across all selected sites. These sums are
+rounded (see <strong>Note 1</strong> below). By default, the
+<em>Map/Selection</em> tables display summed counts for the whole study
+area. By using Category Selectors, or selecting sites in the Map or
+Registry, these tables can be updated to display summed counts for those
+particular selections. Selecting a species in a <em>Map/Selection</em>
+table will display on the Map the sites that contributed to the summed
+counts in that table.</p></li>
+<li><p><strong><em>Site</em></strong> <strong>tables</strong>: These
+tables provide counts at a single site, but only when a site is selected
+in the <strong>Site List</strong>. These count numbers have
 <strong>not</strong> been rounded. By default, <em>Site</em> tables do
 not show any data. They must be activated by selecting a site in the
 Site List. Metric-specific <em>Site</em> tables may not display any data
@@ -2068,7 +2075,7 @@ DataProvider.</p></li>
 Data Provider to a site.</p></li>
 <li><p><strong>Latitude</strong>: (Decimal degrees) Latitude of
 site.</p></li>
-<li><p><strong>Longitude </strong>: (Decimal degrees) Longitude of
+<li><p><strong>Longitude</strong> : (Decimal degrees) Longitude of
 site.</p></li>
 <li><p><strong>State</strong>: Name of State in which a site is
 located.</p></li>
@@ -2185,62 +2192,74 @@ other datasets.</p></li>
 <div id="references" class="section level3">
 <h3>5. References</h3>
 <p>Alabama Audubon. 2023. Alabama Coastal Bird Stewardship Program:
-Study Areas. Alabama Audubon Coastal Bird Stewardship Program. 2023. <a href="https://alaudubon.org/research" class="uri">https://alaudubon.org/research</a> Alabama Department of
-Conservation and Natural Resources. 2010-2022. Division of Wildlife and
-Freshwater Fisheries — Nongame Wildlife Program. <a href="https://www.outdooralabama.com/about-us/wildlife-and-freshwater-fisheries-division" class="uri">https://www.outdooralabama.com/about-us/wildlife-and-freshwater-fisheries-division</a>
-Audubon Delta. 2023. Final Programmatic Report Narrative. Prepared for
-National Fish and Wildlife Foundation. Barnes, K.B., C. Lill, and E.I.
-Johnson. 2023. Louisiana’s Coastal Bird Stewardship Program: 2022 Final
-Report. National Audubon Society, Baton Rouge, LA. Barnes, K.B., C.
-Lill, and E.I. Johnson. 2022. Louisiana’s Coastal Bird Stewardship
-Program: 2021 Final Report. National Audubon Society, Baton Rouge, LA.
-Barnes, K.B. and E.I. Johnson. 2021. Louisiana’s Coastal Bird
+Study Areas.</p>
+<p>Alabama Audubon Coastal Bird Stewardship Program. 2023. <a href="https://alaudubon.org/research" class="uri">https://alaudubon.org/research</a></p>
+<p>Alabama Department of Conservation and Natural Resources. 2010-2022.
+Division of Wildlife and Freshwater Fisheries — Nongame Wildlife
+Program. <a href="https://www.outdooralabama.com/about-us/wildlife-and-freshwater-fisheries-division" class="uri">https://www.outdooralabama.com/about-us/wildlife-and-freshwater-fisheries-division</a></p>
+<p>Audubon Delta. 2023. Final Programmatic Report Narrative. Prepared
+for National Fish and Wildlife Foundation.</p>
+<p>Barnes, K.B., C. Lill, and E.I. Johnson. 2023. Louisiana’s Coastal
+Bird Stewardship Program: 2022 Final Report. National Audubon Society,
+Baton Rouge, LA.</p>
+<p>Barnes, K.B., C. Lill, and E.I. Johnson. 2022. Louisiana’s Coastal
+Bird Stewardship Program: 2021 Final Report. National Audubon Society,
+Baton Rouge, LA.</p>
+<p>Barnes, K.B. and E.I. Johnson. 2021. Louisiana’s Coastal Bird
 Stewardship Program: 2019-2020 Final Report. National Audubon Society,
-Baton Rouge, LA. Cobb, S. D., O. A. Morpeth, L. M. Koczur. 2020. Alabama
-Audubon Coastal Conservation Programs 2020 Report. Cobb, S., O. Morpeth,
-F. Batchelor, and L. Koczur. 2021. Alabama Audubon Coastal Conservation
-Programs 2021 Report. Darrah, A. 2017. Round Island Restoration Area –
-Preliminary Bird Surveys. Mississippi Coastal Bird Stewardship Program.
-PowerPoint presentation. Darrah, A. and T. Guida. 2021. Audubon
-Mississippi Coastal Program – 2020 Breeding Season Summary. Prepared for
-Mississippi Department of Environmental Quality and National Fish and
-Wildlife Foundation. Darrah, A. and T. Guida. 2022. Audubon Mississippi
-Coastal Program – 2021 Breeding Season Summary. Prepared for Mississippi
-Department of Environmental Quality and National Fish and Wildlife
-Foundation. Darrah, A., C. Stempien, and T. Guida. 2022. Audubon Delta:
-Mississippi Coastal Program – 2022 Breeding Season Summary. Deepwater
-Horizon Regionwide Trustee Implementation Group. 2023. Avian Data
-Monitoring Portal. <a href="https://www.avianmonitoring.com" class="uri">https://www.avianmonitoring.com</a> Deepwater Horizon
-Louisiana Trustee Implementation Group. 2023. Guidance for Coastal
-Ecosystem Restoration and Monitoring to Create or Improve Bird-Nesting
-Habitat. Baton Rouge, Louisiana. Florida Fish and Wildlife Conservation
-Commission Research Institute. 2023. Wading Bird database. <a href="https://myfwc.com/research/" class="uri">https://myfwc.com/research/</a> Florida Shorebird Database.
-2023. Online tool for entering and exploring data on Florida’s
-shorebirds and seabirds, developed and maintained by the Florida Fish
-and Wildlife Conservation Commission. <a href="https://app.myfwc.com/crossdoi/shorebirds/" class="uri">https://app.myfwc.com/crossdoi/shorebirds/</a> Johnson, E.I.
-2016. Louisiana’s Coastal Bird Stewardship 2015 Annual Report:
-Beach-nesting Bird Protection, Monitoring, and Community Outreach.
-National Audubon Society, Baton Rouge, LA. Johnson, E.I. 2017.
+Baton Rouge, LA.</p>
+<p>Cobb, S. D., O. A. Morpeth, L. M. Koczur. 2020. Alabama Audubon
+Coastal Conservation Programs 2020 Report.</p>
+<p>Cobb, S., O. Morpeth, F. Batchelor, and L. Koczur. 2021. Alabama
+Audubon Coastal Conservation Programs 2021 Report.</p>
+<p>Darrah, A. 2017. Round Island Restoration Area – Preliminary Bird
+Surveys. Mississippi Coastal Bird Stewardship Program.PowerPoint
+presentation.</p>
+<p>Darrah, A. and T. Guida. 2021. Audubon Mississippi Coastal Program –
+2020 Breeding Season Summary. Prepared for Mississippi Department of
+Environmental Quality and National Fish and Wildlife Foundation.</p>
+<p>Darrah, A. and T. Guida. 2022. Audubon Mississippi Coastal Program –
+2021 Breeding Season Summary. Prepared for Mississippi Department of
+Environmental Quality and National Fish and Wildlife Foundation.</p>
+<p>Darrah, A., C. Stempien, and T. Guida. 2022. Audubon Delta:
+Mississippi Coastal Program – 2022 Breeding Season Summary.</p>
+<p>Deepwater Horizon Regionwide Trustee Implementation Group. 2023.
+Avian Data Monitoring Portal. <a href="https://www.avianmonitoring.com" class="uri">https://www.avianmonitoring.com</a></p>
+<p>Deepwater Horizon Louisiana Trustee Implementation Group. 2023.
+Guidance for Coastal Ecosystem Restoration and Monitoring to Create or
+Improve Bird-Nesting Habitat. Baton Rouge, Louisiana.</p>
+<p>Florida Fish and Wildlife Conservation Commission Research Institute.
+2023. Wading Bird database. <a href="https://myfwc.com/research/" class="uri">https://myfwc.com/research/</a></p>
+<p>Florida Shorebird Database. 2023. Online tool for entering and
+exploring data on Florida’s shorebirds and seabirds, developed and
+maintained by the Florida Fish and Wildlife Conservation Commission. <a href="https://app.myfwc.com/crossdoi/shorebirds/" class="uri">https://app.myfwc.com/crossdoi/shorebirds/</a></p>
+<p>Johnson, E.I. 2016. Louisiana’s Coastal Bird Stewardship 2015 Annual
+Report: Beach-nesting Bird Protection, Monitoring, and Community
+Outreach.</p>
+<p>National Audubon Society, Baton Rouge, LA. Johnson, E.I. 2017.
 Louisiana’s Coastal Stewardship Program: 2017 Final Report to American
-Bird Conservancy. National Audubon Society, Baton Rouge, LA.<br />
-Johnson, E.I. 2019. Louisiana’s Coastal Bird Stewardship Program: 2018
-Final Report - Elmer’s Island Wildlife Refuge. National Audubon Society,
-Baton Rouge, LA. Johnson, E.I. 2019. Louisiana’s Coastal Bird
-Stewardship Program: 2018 Final Internal Report to Rockefeller State
-Wildlife Refuge. National Audubon Society, Baton Rouge, LA. Johnson,
-E.I., K. Ray, and S. Collins. 2017. Louisiana’s Coastal Bird Stewardship
-Program: 2016 Final Report. National Audubon Society, Baton Rouge,
-LA.<br />
-Koczur, L. M. and E. Rhodes. 2019. Alabama Audubon Coastal Conservation
-Programs 2019 Report. Koczur, L. M., S. D. Cobb, O. A. Morpeth, N. Love.
-2020. Alabama Coastal Bird Stewardship Program: 2017-2020 Report.
-Morpeth, O., R. Rolland, C. Weatherby, F. Batchelor, and L. Koczur.
-2023. Alabama Coastal Bird Stewardship Program: 2022 Report. Pacyna, S.
-and A. Darrah. 2017. Audubon Mississippi Coastal Bird Stewardship – 2017
-Colonial Breeding Birds Monitoring. Pacyna, S. and A. Darrah. 2019.
-Audubon Mississippi Coastal Programs – SRP-013-19 Summary. Prepared for
-the Mississippi Department of Marine Resources. Texas Waterbird Society.
-2023. Maps and Data Portal. <a href="https://www.texaswaterbirds.org/data" class="uri">https://www.texaswaterbirds.org/data</a></p>
+Bird Conservancy. National Audubon Society, Baton Rouge, LA.</p>
+<p>Johnson, E.I. 2019. Louisiana’s Coastal Bird Stewardship Program:
+2018 Final Report - Elmer’s Island Wildlife Refuge. National Audubon
+Society, Baton Rouge, LA.</p>
+<p>Johnson, E.I. 2019. Louisiana’s Coastal Bird Stewardship Program:
+2018 Final Internal Report to Rockefeller State Wildlife Refuge.
+National Audubon Society, Baton Rouge, LA.</p>
+<p>Johnson, E.I., K. Ray, and S. Collins. 2017. Louisiana’s Coastal Bird
+Stewardship Program: 2016 Final Report. National Audubon Society, Baton
+Rouge, LA.</p>
+<p>Koczur, L. M. and E. Rhodes. 2019. Alabama Audubon Coastal
+Conservation Programs 2019 Report.</p>
+<p>Koczur, L. M., S. D. Cobb, O. A. Morpeth, N. Love. 2020. Alabama
+Coastal Bird Stewardship Program: 2017-2020 Report.</p>
+<p>Morpeth, O., R. Rolland, C. Weatherby, F. Batchelor, and L. Koczur.
+2023. Alabama Coastal Bird Stewardship Program: 2022 Report.</p>
+<p>Pacyna, S. and A. Darrah. 2017. Audubon Mississippi Coastal Bird
+Stewardship – 2017 Colonial Breeding Birds Monitoring.</p>
+<p>Pacyna, S. and A. Darrah. 2019. Audubon Mississippi Coastal Programs
+– SRP-013-19 Summary. Prepared for the Mississippi Department of Marine
+Resources.</p>
+<p>Texas Waterbird Society. 2023. Maps and Data Portal. <a href="https://www.texaswaterbirds.org/data" class="uri">https://www.texaswaterbirds.org/data</a></p>
 <p><br></p>
 </div>
 <div id="appendix" class="section level3">
@@ -2253,8 +2272,8 @@ the Mississippi Department of Marine Resources. Texas Waterbird Society.
 Atlas.</strong></h6>
 <table>
 <colgroup>
-<col width="28%" />
-<col width="38%" />
+<col width="29%" />
+<col width="37%" />
 <col width="33%" />
 </colgroup>
 <thead>
