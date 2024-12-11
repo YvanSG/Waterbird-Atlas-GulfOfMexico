@@ -1,5 +1,5 @@
 ############################################################################################
-############# Atlas of Waterbird Breeding Sites in the Northern Gulf of Mexico #############
+############# Atlas of Breeding Sites for Waterbirds in the Northern Gulf of Mexico ########
 ############################################################################################
 
 ## Written by Kathy Hixson
@@ -42,16 +42,18 @@ d <- d  %>% rename("2016" = X2016)
 
 # Remove colonies based on Justin LeClaire's input
 
-# SW Mansfield Int - Justin unsure of these coordinates and probably underwater - no birds counted (11 rows)
+# SW Mansfield Int - Justin LeClaire unsure of these coordinates 
+# and that location is probably underwater - no birds counted (11 rows)
 d<- subset(d, Colony.Name != "SW Mansfield Int")
 
-# SE Mansfield Intersection - Justin unsure of these coordinates and probably underwater - no birds counted (2 rows)
+# SE Mansfield Intersection - Justin LeClaire unsure of these coordinates 
+# and that location is probably underwater - no birds counted (2 rows)
 d<- subset(d, Colony.Name != "SE Mansfield Intersection")
 
-# Port Isabel Spoil - Justin had never heard of this - no birds counted (14 rows) 
+# Port Isabel Spoil - Justin LeClaire had never heard of this - no birds counted (14 rows) 
 d<- subset(d, Colony.Name != "Port Isabel Spoil")
 
-# Padre Beach Estates - Justin had never heard of this - no birds counted (1 row) 
+# Padre Beach Estates - Justin LeClaire had never heard of this - no birds counted (1 row) 
 d<- subset(d, Colony.Name != "Padre Beach Estates")
 
 
